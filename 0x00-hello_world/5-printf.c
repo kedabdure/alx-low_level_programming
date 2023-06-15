@@ -1,7 +1,7 @@
-include <stdio.h>
+nclude <stdio.h>
 /**
-*main - main block
-*Return: 0
+* main - main block
+* Return: 0
 */
 int main(void)
 {

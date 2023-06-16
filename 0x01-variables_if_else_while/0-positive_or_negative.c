@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 
-/** more headers goes there
- * about variable
- * betty style doc for function main goes there
- * return: always
+/** 
+ * main - Entry point
+ * Discription: Check if the randemly henerated number is positive, negative or zero
+ * return: always 0 (sucsuss)
 */
 int main(void)
 {

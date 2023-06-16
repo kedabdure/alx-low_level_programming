@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-	char hex_digit[] = "012345678910abcdef";
+	char hex_digit[] = "0123456789abcdef";
 	int i;
 
 	for (i = 0; i <= 16; i++)
@@ -19,4 +19,3 @@ int main(void)
 
 	return (0);
 }
-		

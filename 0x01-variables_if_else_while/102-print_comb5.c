@@ -16,22 +16,20 @@ int main(void)
 	{
 		for (j = i; j <= 99; j++)
 		{
-			int d1 = i / 10;
-			int d2 = i % 10;
-			int d3 = j / 10;
-			int d4 = j % 10;
-
-			putchar(d1 + '0');
-			putchar(d2 + '0');
-			putchar(' ');
-			putchar(d3 + '0');
-			putchar(d4 + '0');
-
-			if (i != 98 || j != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			 if (i != j)
+			 {
+				 putchar(i / 10 + '0');
+				 putchar(i % 10 + '0');
+				 putchar(' ');
+				 putchar(j / 10 + '0');
+				 putchar(j % 10 + '0');
+				 putchar(j % 10 + '0');
+				 if (i != 98 || j != 99)
+				 {
+					 putchar(',');
+					 putchar(' ');
+				 }
+			 }
 		}
 	}
 

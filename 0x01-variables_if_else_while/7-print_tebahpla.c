@@ -9,7 +9,6 @@
 int main(void)
 {
 	char letter;
-	
 
 	for (letter = 'z'; letter >= 'a'; letter--)
 	{
@@ -21,4 +20,4 @@ int main(void)
 
 		return (0);
 
-}		
+}

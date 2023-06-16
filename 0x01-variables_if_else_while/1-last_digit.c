@@ -5,17 +5,24 @@
 /**
  * main - Prints a random number and states whether
  *        it is greater than 5, less than 6 but not zero, or zero.
- * Return always 0.
+ * Return: 0 (Success)
  */
 int main(void)
 {
 	int n;
 	int lastDigit;
+<<<<<<< HEAD
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	int lastDigit = n % 10;
+=======
 
-	printf("Last digit of %d is ", n);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	lastDigit = n % 10;
+>>>>>>> 84b0a33ccaa540fad453b96e812bee9f082e6cf2
+
+	printf("Last digit of %d is %d ", n, lastDigit);
 
 
 	if (lastDigit > 5)

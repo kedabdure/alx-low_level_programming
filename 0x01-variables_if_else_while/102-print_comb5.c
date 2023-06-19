@@ -18,7 +18,9 @@ int main(void)
 		for (i = 48; i < 58; i++)
 		{
 			j = i + 1;
+
 			jfirst = ifirst;
+
 			for (; jfirst < 58; jfirst++)
 			{
 				for (; j < 58; j++)
@@ -38,6 +40,9 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
+	
 	return (0);
 }
+

@@ -18,7 +18,7 @@ int _printstr(char c[])
 
 /**
  * times_table - prints out a multiplication table for between
- * 0 and 9 
+ * 0 and 9
  *
  * Return void
  */

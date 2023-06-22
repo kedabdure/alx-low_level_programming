@@ -1,15 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_alphabet - prints the alphabet
- * Return: void
+ * _isupper - uppercase letters
+ * @c: character to check
+ *
+ * Return: 0 or 1
  */
-void print_alphabet(void)
-{
-	char i = 'a';
+int _isupper(int c)
 
-	while (i <= 'z')
-		_putchar(i++);
-	_putchar('\n');
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+
 }

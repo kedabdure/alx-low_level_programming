@@ -1,0 +1,1 @@
+about function pointer

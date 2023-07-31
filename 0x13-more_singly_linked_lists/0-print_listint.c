@@ -1,4 +1,6 @@
+#include <stdio>
 #include "lists.h"
+
 /**
  * print_listint - print the number of nodes
  * @h: holds the first node address

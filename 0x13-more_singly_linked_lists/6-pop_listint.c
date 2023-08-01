@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include "lists.h"
+
 /**
- * pop_listint - Delet the first node and return it's value
+ * pop_listint - The function return the first value of the list
  * @head: A pointer that holds the address of head
  *
  *Return: the value of deleted node
@@ -19,5 +20,7 @@ int pop_listint(listint_t **head)
 	ptr = (*head)->next;
 	n = (*head)->n;
 	free(*head);
+	*head = ptr;
+
 	return (n);
 }

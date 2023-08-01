@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * get_nodeint_at_index - Rerurn the node at a given index.

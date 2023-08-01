@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -6,16 +5,20 @@
  * @head: hold  address of head pointer
  * @n: receive intiger value
  *
- *
+ * Return: return the address of the new node
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *temp = malloc(sizeof(listint_t))
+	listint_t *temp = malloc(sizeof(listint_t));
 
+	if (*head == NULL)
+	{
+		return (NULL);
+	}
 	temp->n = n;
 	temp->next = *head;
 	*head = temp;
 
-	return (head);
+	return (temp);
 }

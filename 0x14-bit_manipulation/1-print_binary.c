@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 	unsigned long int divisor;
 	char flag = 0;
 
-	divisor = IUL << (sizeof(unsigned long int) * 8 - 1);
+	divisor = 1UL << (sizeof(unsigned long int) * 8 - 1);
 
 	while (divisor != 0)
 	{

@@ -5,6 +5,7 @@
  *
  * @filename: The name of the file to create.
  * @text_content: The content to write to the file.
+ * @f: pointer that accept value
  *
  * Return: 1 on success, -1 on failure.
  */

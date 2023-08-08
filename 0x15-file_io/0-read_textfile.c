@@ -1,7 +1,5 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
 /**
  * custom_read_textfile - Reads a text file and displays it on standard output.
@@ -10,40 +8,30 @@
  *
  * Return: The number of bytes read and printed. 0 if there's an error.
  */
-ssize_t custom_read_textfile(const char *file_name, size_t num_bytes)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_descriptor, read_result, write_result;
-	char *data_buffer;
+	ssize_t o, r, w;
+	char *buffer;
 
-	if (file_name == NULL)
+	if (filename == NULL)
 		return (0);
 
-	data_buffer = malloc(sizeof(char) * num_bytes);
-	if (data_buffer == NULL)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
 
-	file_descriptor = open(file_name, O_RDONLY);
-	if (file_descriptor == -1)
+	o = open(filename, O_RDONLY);
+	r = read(o, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
+
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
-		free(data_buffer);
+		free(buffer);
 		return (0);
 	}
 
-	read_result = read(file_descriptor, data_buffer, num_bytes);
-	close(file_descriptor);
+	free(buffer);
+	close(o);
 
-	if (read_result == -1)
-	{
-		free(data_buffer);
-		return (0);
-	}
-
-	write_result = write(STDOUT_FILENO, data_buffer, read_result);
-	free(data_buffer);
-
-	if (write_result == -1 || write_result != read_result)
-		return (0);
-
-	return (write_result);
+	return (w);
 }
-

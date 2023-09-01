@@ -1,1 +1,1 @@
-i This is about static library
+This is about static library

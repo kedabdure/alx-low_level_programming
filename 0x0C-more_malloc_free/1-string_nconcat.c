@@ -3,7 +3,6 @@
 
 /**
  * string_nconcat - Concatenates two strings up to the nth character.
- *
  * @s1: The first string
  * @s2: The second string
  * @n: The maximum number of characters from s2 to concatenate

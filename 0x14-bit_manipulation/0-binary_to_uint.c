@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
+ * binary_to_uint - convert binary to decimal int
+ * b: A character pointer that hold binary number
  *
- *
- *
- *
+ * Return: unsigned int, if it failed return 0
  */
 
 unsigned int binary_to_uint(const char *b)

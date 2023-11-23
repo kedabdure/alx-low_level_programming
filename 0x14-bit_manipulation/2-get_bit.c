@@ -5,7 +5,7 @@
  * @n: The number to check bits
  * @index: The index of the bit to check
  *
- * Return: The value of the bit at the specified index, or -1 if index is invalid
+ * Return: The value of the bit at the specified index
  */
 int get_bit(unsigned long int n, unsigned int index)
 {

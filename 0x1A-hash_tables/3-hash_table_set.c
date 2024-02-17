@@ -29,7 +29,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (ht->array[index] != NULL)
 	{
 		hash_node_t *temp = ht->array[index];
-		
+
 		while (temp->next != NULL)
 		{
 			temp = temp->next;

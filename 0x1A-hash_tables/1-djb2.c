@@ -3,7 +3,7 @@
 /**
  * hash_djb2 - Return the hash value
  * @str: String to be turned into a hash value
- * 
+ *
  * Return: Hash value
  */
 unsigned long int hash_djb2(const unsigned char *str)

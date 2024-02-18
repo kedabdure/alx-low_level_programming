@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (new_node == NULL)
 		return (0);
 
-	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
+	if (ht == NULL || key == NULL || *key == '\0')
 		return (0);
 
 	new_node->key = strdup(key);
